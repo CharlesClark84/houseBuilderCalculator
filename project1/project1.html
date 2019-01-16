@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Project1</title>
+    <script src="project1.js" charset="utf-8">
+    </script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <h1>Use the form below to personalize your new house.</h1>
+    <form>
+
+    <label for="story">One or Two stories:</label><br/>
+
+      <img data-squarefootage="175" src="images/oneStory.jpg" id="oneStory" onclick="singleSelect()"/>
+      <img data-squarefootage="135" id="twoStory" src="images/twoStory.jpg" onclick="doubleSelect()"/><br/><br/>
+
+    <label for="color">Color:</label><br/>
+      <img src="images/red.jpg" data-color="red" id="red" onclick="redSelect()"/>
+      <img src="images/orange.jpg" data-color="orange" id="orange" onclick="orangeSelect()"/>
+      <img src="images/yellow.jpg" data-color="yellow" id="yellow" onclick="yellowSelect()"/>
+      <img src="images/blue.jpg" data-color="blue" id="blue" onclick="blueSelect()"/>
+      <img src="images/green.jpg" data-color="green" id="green" onclick="greenSelect()"/>
+      <img src="images/purple.jpg" data-color="purple" id="purple" onclick="purpleSelect()"/>
+      <img src="images/black.jpg" data-color="black" id="black" onclick="blackSelect()"/>
+      <img src="images/grey.jpg" data-color="grey" id="grey" onclick="greySelect()"/><br/><br/>
+
+    <label for="color">Material:</label><br/>
+
+      <img src="images/vinyl.jpg"  data-material="vinyl" id="vinyl" onclick="vinylSelect()"/>
+      <img src="images/wood.jpg" data-material="wood" id="wood" onclick="woodSelect()"/>
+      <img src="images/brick.jpg" data-material="brick" id="brick" onclick="brickSelect()"/>
+      <img src="images/stucko.jpg" data-material="stucko" id="stucko" onclick="stuckoSelect()"/>
+      <img src="images/stone.jpg" data-material="stone" id="stone" onclick="stoneSelect()"/><br/><br/>
+
+    <label for="color">Square Footage:</label><br/>
+
+      <input type="text" id="squarefootage" placeholder="Enter Square Footage"/><br/><br/>
+
+    <label for="color">Garage Size:</label><br/>
+
+      <input type="radio" id="garage" name="garage" value="1">1
+      <input type="radio" id="garage2" name="garage" value="2">2
+      <input type="radio" id="garage3" name="garage" value="3">3<br>
+
+      <br/><button type="button" onclick="calculate()">Get Results</button>
+      <input type="reset">
+    </form>
+
+
+
+  </body>
+
+</html>
